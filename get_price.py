@@ -2,7 +2,7 @@ import requests
 import datetime
 import time
 
-coins = ['ETH', 'USDT', 'USDC']
+coins = ['ETH', 'USDT', 'USDC', 'BTC']
 base_currency = 'USD'
 fiat_currency = 'JPY'
 
