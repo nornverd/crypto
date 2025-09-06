@@ -3,7 +3,7 @@ import datetime
 import time
 import csv
 
-coins = ['ETH', 'USDT', 'USDC', 'BTC']
+coins = ['ETH', 'USDT', 'USDC', 'BTC', 'HYPE']
 base_currency = 'USD'
 fiat_currency = 'JPY'
 
