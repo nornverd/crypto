@@ -1,6 +1,7 @@
 import requests
 import datetime
 import time
+import csv
 
 coins = ['ETH', 'USDT', 'USDC', 'BTC']
 base_currency = 'USD'
@@ -33,6 +34,30 @@ for single_date in (start_date + datetime.timedelta(n) for n in range((end_date 
             })
     time.sleep(0.2)  # API制限対策
 
-# 結果表示例
-for row in results[:5]:
-    print(row)
+
+# CSV出力処理
+csv_filename = 'crypto_prices.csv'
+header = ['date'] + [f'{coin}_USD' for coin in coins] + [f'{coin}_JPY' for coin in coins]
+
+# 日付ごとに各通貨の価格をまとめる
+date_dict = {}
+for row in results:
+    d = row['date']
+    coin = row['coin']
+    if d not in date_dict:
+        date_dict[d] = {}
+    date_dict[d][f'{coin}_USD'] = row['usd']
+    date_dict[d][f'{coin}_JPY'] = row['jpy']
+
+with open(csv_filename, 'w', newline='', encoding='utf-8') as f:
+    writer = csv.writer(f)
+    writer.writerow(header)
+    for d in sorted(date_dict.keys()):
+        row = [d]
+        for coin in coins:
+            row.append(date_dict[d].get(f'{coin}_USD', ''))
+        for coin in coins:
+            row.append(date_dict[d].get(f'{coin}_JPY', ''))
+        writer.writerow(row)
+
+print(f'CSVファイル {csv_filename} に出力しました')
