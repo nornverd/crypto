@@ -10,7 +10,8 @@ coins = {
     'USDT': 'tether',
     'USDC': 'usd-coin',
     'BTC': 'bitcoin',
-    'hyperliquid': 'hyperliquid'  # CoinGecko上のIDが異なる場合は修正してください
+    'hyperliquid': 'hyperliquid',  # CoinGecko上のIDが異なる場合は修正してください
+    'MIYAKO': 'miyako'
 }
 base_currency = 'usd'
 fiat_currency = 'jpy'
