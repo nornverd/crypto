@@ -73,3 +73,6 @@ with open(csv_filename, 'w', newline='', encoding='utf-8') as f:
         writer.writerow(row)
 
 print(f'CSVファイル {csv_filename} に出力しました')
+
+
+####githubtest
