@@ -10,14 +10,15 @@
 - BTC（Bitcoin）
 - hyperliquid
 - MIYAKO
+- SOL（Solana）
 
 ## 出力ファイル
 - `crypto_prices.csv`
   - 各日付ごとに全通貨のUSD価格・JPY価格が記録されます。
-  - ヘッダー例：
-	```
-	date,ETH_USD,USDT_USD,USDC_USD,BTC_USD,hyperliquid_USD,MIYAKO_USD,ETH_JPY,USDT_JPY,USDC_JPY,BTC_JPY,hyperliquid_JPY,MIYAKO_JPY
-	```
+	- ヘッダー例：
+		```
+		date,ETH_USD,USDT_USD,USDC_USD,BTC_USD,hyperliquid_USD,MIYAKO_USD,SOL_USD,ETH_JPY,USDT_JPY,USDC_JPY,BTC_JPY,hyperliquid_JPY,MIYAKO_JPY,SOL_JPY
+		```
 
 ## 使い方
 1. 必要なPythonパッケージをインストールしてください。
