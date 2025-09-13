@@ -12,7 +12,8 @@ coins = {
     'BTC': 'bitcoin',
     'hyperliquid': 'hyperliquid',  # CoinGecko上のIDが異なる場合は修正してください
     'MIYAKO': 'miyako',
-    'SOL': 'solana'
+    'SOL': 'solana',
+    'LINEA': 'linea'
 }
 base_currency = 'usd'
 fiat_currency = 'jpy'
