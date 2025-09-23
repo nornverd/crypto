@@ -1,6 +1,5 @@
 # 仮想通貨価格取得スクリプト
-
-このリポジトリの `get_price.py` は、CoinGecko APIを利用して以下の仮想通貨（ETH, USDT, USDC, BTC, hyperliquid, MIYAKO）の過去1年間の日次価格（USD/JPY）を取得し、CSVファイルとして出力するPythonスクリプト
+# このリポジトリの `get_price.py` は、CoinGecko APIを利用して以下の仮想通貨（ETH, USDT, USDC, BTC, hyperliquid, MIYAKO）の過去1年間の日次価格（USD/JPY）を取得し、CSVファイルとして出力するPythonスクリプト
 
 ## 取得対象通貨
 - ETH（Ethereum）
