@@ -19,6 +19,7 @@
 			date,ETH_USD,USDT_USD,USDC_USD,BTC_USD,hyperliquid_USD,MIYAKO_USD,SOL_USD,LINEA_USD,ETH_JPY,USDT_JPY,USDC_JPY,BTC_JPY,hyperliquid_JPY,MIYAKO_JPY,SOL_JPY,LINEA_JPY
 			```
 
+
 ## 使い方
 1. 必要なPythonパッケージをインストールしてください。
 	```bash
