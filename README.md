@@ -10,6 +10,7 @@
 - MIYAKO
 - SOL（Solana）
 - LINEA
+- 
 
 ## 出力ファイル
 - `crypto_prices.csv`
