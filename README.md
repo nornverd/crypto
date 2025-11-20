@@ -12,7 +12,6 @@
 - LINEA
 
 
-
 ## 出力ファイル
 - `crypto_prices.csv`
   - 各日付ごとに全通貨のUSD価格・JPY価格が記録されます。
